@@ -1,0 +1,28 @@
+﻿<Window x:Class="WpfApp9.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp9"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid Background="White">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBox Grid.Row="1" Grid.Column="0" x:Name="name"  Background="PeachPuff" Foreground="Black" FontSize="20" Height="50" Width="160">Имя</TextBox>
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="phone" Background="PeachPuff" Foreground="Black" FontSize="20" Height="50" Width="160" >Номер телефона</TextBox>
+        <TextBox Grid.Row="1" Grid.Column="2" x:Name="years" Background="PeachPuff" Foreground="Black" FontSize="20" Height="50" Width="160">Возраст</TextBox>
+        <Button Background="PeachPuff" Foreground="Black"  Grid.Row="3" Grid.Column="0" x:Name="add" Click="add_Click" Height="50" Width="160" FontSize="30">Добавить</Button>
+        <Button Background="PeachPuff" Foreground="Black" Grid.Row="3" Grid.Column="2" x:Name="save" Click="save_Click" Height="50" Width="160"  FontSize="30">Сохранить</Button>
+    </Grid>
+</Window>
